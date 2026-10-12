@@ -1,0 +1,142 @@
+-- The C compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: D:/Software/StrawberryPerl/c/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done (1.9s)
+-- Generating done (0.3s)
+-- Build files have been written to: C:/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/build-host
+[1/105] Building C object CMakeFiles/catalog_fixture_gen.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/service/bvpv_errcode.c.obj
+[2/105] Building C object CMakeFiles/catalog_fixture_gen.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/tools/catalog/csv.c.obj
+[3/105] Building C object CMakeFiles/catalog_fixture_gen.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/catalog/bvpv_catalog.c.obj
+[4/105] Building C object CMakeFiles/fw_crypto.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/MbedTLS/library/asn1write.c.obj
+[5/105] Building C object CMakeFiles/fw_crypto.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/MbedTLS/library/bignum_mod_raw.c.obj
+[6/105] Building C object CMakeFiles/catalog_fixture_gen.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/tools/catalog/catalog_gen.c.obj
+[7/105] Building C object CMakeFiles/fw_crypto.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/MbedTLS/library/asn1parse.c.obj
+[8/105] Building C object CMakeFiles/fw_crypto.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/MbedTLS/library/bignum_mod.c.obj
+[9/105] Building C object CMakeFiles/fw_crypto.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/MbedTLS/library/constant_time.c.obj
+[10/105] Building C object CMakeFiles/fw_crypto.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/MbedTLS/library/platform.c.obj
+[11/105] Building C object CMakeFiles/fw_crypto.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/MbedTLS/library/ecp_curves.c.obj
+[12/105] Building C object CMakeFiles/test_crc16.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_crc16.c.obj
+[13/105] Building C object CMakeFiles/test_crc16.dir/test_crc16.c.obj
+[14/105] Building C object CMakeFiles/test_crc16.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_frame.c.obj
+[15/105] Building C object CMakeFiles/fw_crypto.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/MbedTLS/library/bignum_core.c.obj
+[16/105] Building C object CMakeFiles/fw_crypto.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/MbedTLS/library/ecdsa.c.obj
+[17/105] Building C object CMakeFiles/fw_crypto.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/MbedTLS/library/memory_buffer_alloc.c.obj
+[18/105] Building C object CMakeFiles/fw_crypto.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/MbedTLS/library/sha256.c.obj
+[19/105] Building C object CMakeFiles/fw_crypto.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/MbedTLS/library/bignum.c.obj
+[20/105] Building C object CMakeFiles/test_crc16.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_frag.c.obj
+[21/105] Building C object CMakeFiles/fw_crypto.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/MbedTLS/library/ecp.c.obj
+[22/105] Building C object CMakeFiles/test_frame.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_crc16.c.obj
+[23/105] Building C object CMakeFiles/test_frame.dir/test_frame.c.obj
+[24/105] Building C object CMakeFiles/test_frame.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_frame.c.obj
+[25/105] Building C object CMakeFiles/test_frame.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_frag.c.obj
+[26/105] Building C object CMakeFiles/test_frag.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_crc16.c.obj
+[27/105] Linking C executable catalog_fixture_gen.exe
+[28/105] Building C object CMakeFiles/test_frag.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_frame.c.obj
+[29/105] Building C object CMakeFiles/test_frag.dir/test_frag.c.obj
+[30/105] Building C object CMakeFiles/test_frag.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_frag.c.obj
+[31/105] Building C object CMakeFiles/test_catalog.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_frame.c.obj
+[32/105] Building C object CMakeFiles/test_catalog.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_crc16.c.obj
+[33/105] Building C object CMakeFiles/test_catalog.dir/test_catalog_data.c.obj
+[34/105] Building C object CMakeFiles/test_catalog.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_frag.c.obj
+[35/105] Building C object CMakeFiles/test_service.dir/test_catalog_data.c.obj
+[36/105] Building C object CMakeFiles/test_catalog.dir/test_catalog.c.obj
+[37/105] Building C object CMakeFiles/test_service.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_crc16.c.obj
+[38/105] Building C object CMakeFiles/test_catalog.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/catalog/bvpv_catalog.c.obj
+[39/105] Building C object CMakeFiles/test_service.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_frag.c.obj
+[40/105] Building C object CMakeFiles/test_service.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_frame.c.obj
+[41/105] Building C object CMakeFiles/test_service.dir/test_service.c.obj
+[42/105] Building C object CMakeFiles/test_service.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/catalog/bvpv_catalog.c.obj
+[43/105] Building C object CMakeFiles/test_service.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/service/bvpv_errcode.c.obj
+[44/105] Building C object CMakeFiles/test_service.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/service/bvpv_svc_desc.c.obj
+[45/105] Building C object CMakeFiles/test_service.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/service/bvpv_service.c.obj
+[46/105] Building C object CMakeFiles/test_service.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/service/bvpv_svc_value.c.obj
+[47/105] Building C object CMakeFiles/test_cd_meta.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/content/bvpv_cd_meta.c.obj
+[48/105] Building C object CMakeFiles/test_cd_meta.dir/test_cd_meta.c.obj
+[49/105] Building C object CMakeFiles/test_usb_device.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/usb/usb_descriptors.c.obj
+[50/105] Building C object CMakeFiles/test_usb_device.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/content/bvpv_cd_meta.c.obj
+[51/105] Building C object CMakeFiles/test_usb_device.dir/test_usb_device.c.obj
+[52/105] Building C object CMakeFiles/test_cd_store.dir/test_cd_store.c.obj
+[53/105] Building C object CMakeFiles/test_cd_store.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/content/bvpv_cd_store.c.obj
+[54/105] Building C object CMakeFiles/test_usb_device.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/usb/msc_disk.c.obj
+[55/105] Building C object CMakeFiles/test_cd_store.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/content/bvpv_cd_meta.c.obj
+[56/105] Building C object CMakeFiles/fw_crypto.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/MbedTLS/library/platform_util.c.obj
+[57/105] Building C object CMakeFiles/test_flash_driver.dir/test_flash_driver.c.obj
+[58/105] Building C object CMakeFiles/test_flash_driver.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/W25Q64/w25q64.c.obj
+[59/105] Building C object CMakeFiles/test_flash_driver.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/W25Q64/spi2_bus.c.obj
+[60/105] Building C object CMakeFiles/test_compact_runtime.dir/test_compact_runtime.c.obj
+[61/105] Building C object CMakeFiles/test_compact_runtime.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/generated/bvpv_catalog_data.c.obj
+[62/105] Building C object CMakeFiles/test_usb_handoff.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/usb/usb_proto.c.obj
+[63/105] Building C object CMakeFiles/test_compact_runtime.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/service/bvpv_svc_value.c.obj
+[64/105] Building C object CMakeFiles/test_compact_runtime.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/catalog/bvpv_catalog.c.obj
+[65/105] Building C object CMakeFiles/test_usb_handoff.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/USB/usb_io.c.obj
+[66/105] Building C object CMakeFiles/test_usb_handoff.dir/test_usb_handoff.c.obj
+[67/105] Building C object CMakeFiles/test_usb_handoff.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_frame.c.obj
+[68/105] Building C object CMakeFiles/test_usb_media.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/usb/usb_media.c.obj
+[69/105] Building C object CMakeFiles/test_usb_handoff.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_crc16.c.obj
+[70/105] Building C object CMakeFiles/test_usb_handoff.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/protocol/bvpv_usb_frag.c.obj
+[71/105] Building C object CMakeFiles/test_usb_media.dir/test_usb_media.c.obj
+[72/105] Building C object CMakeFiles/test_fw_image.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/firmware/fw_image.c.obj
+[73/105] Building C object CMakeFiles/test_fw_image.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/Crypto/fw_crypto.c.obj
+[74/105] Building C object CMakeFiles/test_fw_image.dir/test_fw_image.c.obj
+[75/105] Linking C executable test_crc16.exe
+[76/105] Linking C static library libfw_crypto.a
+[77/105] Linking C executable test_frag.exe
+[78/105] Linking C executable test_cd_meta.exe
+[79/105] Linking C executable test_catalog.exe
+[80/105] Linking C executable test_service.exe
+[81/105] Linking C executable test_frame.exe
+[82/105] Linking C executable test_cd_store.exe
+[83/105] Linking C executable test_usb_media.exe
+[84/105] Linking C executable test_flash_driver.exe
+[85/105] Linking C executable test_usb_device.exe
+[86/105] Linking C executable test_usb_handoff.exe
+[87/105] Linking C executable test_compact_runtime.exe
+[88/105] Linking C executable test_fw_image.exe
+[89/105] Generating catalog-pack/Andromeda.CatalogPack.exe
+  正在确定要还原的项目…
+
+  已还原 C:\Users\17907\AppData\Local\Temp\usb-repo-publication-20261012\clones\Test446\tools\catalog\Andromeda.CatalogPack.csproj (用时 8 秒)。
+
+  Andromeda.CatalogPack -> C:\Users\17907\AppData\Local\Temp\usb-repo-publication-20261012\clones\Test446\build-host\catalog-pack\Andromeda.CatalogPack.exe
+
+
+
+已成功生成。
+
+    0 个警告
+
+    0 个错误
+
+
+
+已用时间 00:00:11.92
+
+[90/105] Generating current-catalog/App/generated/bvpv_catalog_data.c, current-catalog/catalog/SW110048.catalog.csv, current-catalog/catalog/SW110048.tree.csv, current-catalog/build-catalog/SW110048.catalog.body, current-catalog/build-catalog/SW110048.catalog.body.json, current-catalog/build-catalog/SW110048.catalog.body.runtime, current-catalog/App/generated/bvpv_catalog_bindings.h
+PASS source: 2183 parameters, 135 groups, 2318 tree records, 29 UI bindings, 17 errors.
+
+Generate 完成：2183 个参数，135 个分组；写入 13 个产物。
+
+配套要求：运行契约、初值或编译期绑定发生变化，需要重新编译固件。
+
+未生成上位机资源；完整发布请使用 Publish 和 HostRoot。
+
+[91/105] Building C object CMakeFiles/test_catalog_store.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/content/bvpv_cd_meta.c.obj
+[92/105] Building C object CMakeFiles/test_catalog_store.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/Crypto/fw_crypto.c.obj
+[93/105] Building C object CMakeFiles/test_catalog_store.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/content/bvpv_cd_store.c.obj
+[94/105] Building C object CMakeFiles/test_catalog_store.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/catalog/bvpv_catalog.c.obj
+[95/105] Building C object CMakeFiles/test_catalog_store.dir/test_catalog_store.c.obj
+[96/105] Building C object CMakeFiles/test_catalog_store.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/content/bvpv_catalog_store.c.obj
+[97/105] Linking C executable test_catalog_store.exe
+[98/105] Generating current-catalog/generated.acat, current-catalog/generated.acat.public.bin
+PASS ACAT CNG: body/index/contract validation, domain signature, tamper rejection and unchanged release reuse.
+
+[99/105] Building C object CMakeFiles/test_catalog_real.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/content/bvpv_cd_meta.c.obj
+[100/105] Building C object CMakeFiles/test_catalog_real.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/generated/bvpv_catalog_data.c.obj
+[101/105] Building C object CMakeFiles/test_catalog_real.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/Drivers/Crypto/fw_crypto.c.obj
+[102/105] Building C object CMakeFiles/test_catalog_real.dir/test_catalog_real.c.obj
+[103/105] Building C object CMakeFiles/test_catalog_real.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/catalog/bvpv_catalog.c.obj
+[104/105] Building C object CMakeFiles/test_catalog_real.dir/C_/Users/17907/AppData/Local/Temp/usb-repo-publication-20261012/clones/Test446/App/content/bvpv_catalog_store.c.obj
+[105/105] Linking C executable test_catalog_real.exe

@@ -24,7 +24,7 @@ ST PM0214 §4.4.4（p.227）规定 VTOR 偏移最低 9 位为零，最小对齐�
 
 ## 2. TinyUSB、双任务与接收/解析分离
 
-TinyUSB 常规 HID/MSC 回调运行在 USB core task 中，USB 中断通过事件队列交给该 task。RTOS 模式下初始化与反初始化必须在运行 TinyUSB task 的同一 task/context 中。tud_task() 默认使用无限等待，tud_task_ext() 可以设有限等待；这些是当前本地源码和上游 API 的一致约束。依据：[官方并发说明](https://docs.tinyusb.org/en/latest/reference/concurrency.html)、[官方 usbd.h](https://raw.githubusercontent.com/hathach/tinyusb/master/src/device/usbd.h)、[本地 usbd.h](https://github.com/f1rstzi0n/USB-HID/blob/usb-hid-archive-20261012/third_party/tinyusb/src/device/usbd.h)。
+TinyUSB 常规 HID/MSC 回调运行在 USB core task 中，USB 中断通过事件队列交给该 task。RTOS 模式下初始化与反初始化必须在运行 TinyUSB task 的同一 task/context 中。tud_task() 默认使用无限等待，tud_task_ext() 可以设有限等待；这些是当前本地源码和上游 API 的一致约束。依据：[官方并发说明](https://docs.tinyusb.org/en/latest/reference/concurrency.html)、[官方 usbd.h](https://raw.githubusercontent.com/hathach/tinyusb/master/src/device/usbd.h)、[本地 usbd.h](../Drivers/TinyUSB/src/device/usbd.h)。
 
 源码已按以下双任务边界拆分：
 
@@ -40,7 +40,7 @@ TinyUSB 常规 HID/MSC 回调运行在 USB core task 中，USB 中断通过事�
 
 FreeRTOS OSAL 的中断发送使用 xQueueSendToBackFromISR 并执行 ISR yield。调用 FromISR API 的 IRQ，其数值优先级必须大于或等于允许调用系统 API 的阈值。OTG_FS 的数值优先级必须与目标 configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY 保持相容，不能依赖旧板常量。当前目标配置值和 board_usb_hw_init 的中断优先级均为 5；以后改变 RTOS 阈值时须同步核对。依据：[TinyUSB 官方 OSAL](https://raw.githubusercontent.com/hathach/tinyusb/master/src/osal/osal_freertos.h)、[FreeRTOS 官方 ARM_CM4F port.c](https://raw.githubusercontent.com/FreeRTOS/FreeRTOS-Kernel/main/portable/GCC/ARM_CM4F/port.c)、[目标 FreeRTOSConfig.h](../Core/Inc/FreeRTOSConfig.h)。
 
-目标 FreeRTOS 配置已启用静态分配、mutex 和 xTaskGetCurrentTaskHandle，tick 为 1000 Hz；原始 projdefs.h 未定义 pdTICKS_TO_MS，而当前 TinyUSB OSAL 用它转换毫秒。APP 的 App/usb/tusb_config.h 已补最小兼容定义，未为此升级 RTOS。HAL 毫秒时基由 TIM7 回调推进，保留该归属，不能再用 Boot 的 SysTick_Handler 覆盖 APP 的 RTOS SysTick。依据：[目标配置](../Core/Inc/FreeRTOSConfig.h)、[目标 projdefs.h](../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)、[APP tusb_config.h](../App/usb/tusb_config.h)、[目标 HAL timebase](../Core/Src/stm32f4xx_hal_timebase_tim.c)、[本地 OSAL 毫秒转换](https://github.com/f1rstzi0n/USB-HID/blob/usb-hid-archive-20261012/third_party/tinyusb/src/osal/osal_freertos.h)。
+目标 FreeRTOS 配置已启用静态分配、mutex 和 xTaskGetCurrentTaskHandle，tick 为 1000 Hz；原始 projdefs.h 未定义 pdTICKS_TO_MS，而当前 TinyUSB OSAL 用它转换毫秒。APP 的 App/usb/tusb_config.h 已补最小兼容定义，未为此升级 RTOS。HAL 毫秒时基由 TIM7 回调推进，保留该归属，不能再用 Boot 的 SysTick_Handler 覆盖 APP 的 RTOS SysTick。依据：[目标配置](../Core/Inc/FreeRTOSConfig.h)、[目标 projdefs.h](../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)、[APP tusb_config.h](../App/usb/tusb_config.h)、[目标 HAL timebase](../Core/Src/stm32f4xx_hal_timebase_tim.c)、[本地 OSAL 毫秒转换](../Drivers/TinyUSB/src/osal/osal_freertos.h)。
 
 ## 3. 新板 12 MHz / 180 MHz 时钟适配
 

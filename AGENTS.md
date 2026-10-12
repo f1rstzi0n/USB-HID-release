@@ -37,18 +37,20 @@
 
 固件唯一构建定义为本工程 CubeIDE managed build（`.project`、`.cproject`、`.settings/`）；`Test446.ioc`、生成代码和链接脚本随源码入库。CubeMX 再生成后，先核对 GPIO/ISR，再从本工程根目录依次运行：
 
+工程脚本使用 PowerShell 7（`pwsh`）；Windows PowerShell 5.1 无法解析部分 UTF-8 无 BOM 脚本。
+
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/cubeide/apply_sources.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/cubeide/verify_generated.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/cubeide/verify_owned_c.ps1
+pwsh -NoProfile -ExecutionPolicy Bypass -File tools/cubeide/apply_sources.ps1
+pwsh -NoProfile -ExecutionPolicy Bypass -File tools/cubeide/verify_generated.ps1
+pwsh -NoProfile -ExecutionPolicy Bypass -File tools/cubeide/verify_owned_c.ps1
 node tools/cubeide/verify_shared.js
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/cubeide/build.ps1 -Config All
+pwsh -NoProfile -ExecutionPolicy Bypass -File tools/cubeide/build.ps1 -Config All
 node tools/cubeide/verify_builds.js
 cmake -S tests/host -B build-host -G Ninja -DCMAKE_C_COMPILER=gcc
 cmake --build build-host
 ctest --test-dir build-host --output-on-failure
 ```
 
-`-Config All` 对本工程 Debug/Release 执行 clean build。检查失败先修复，不绕过检查烧录；固件/共享代码变更完成条件为相应生成、C 风格、hash、两配置构建/布局检查及 host 回归全部通过。共享契约变更在 `Test446-Boot` 重复其检查流程。工具可用 `STM32CUBEIDE_EXE`、`ARM_GCC`、`ARM_TOOLS` 指定位置；host 显式选 native GCC，目录生成还需 .NET/PowerShell。
+`-Config All` 对本工程 Debug/Release 执行 clean build。检查失败先修复，不绕过检查烧录；固件/共享代码变更完成条件为相应生成、C 风格、hash、两配置构建/布局检查及 host 回归全部通过。共享契约变更在 `Test446-Boot` 重复其检查流程。工具可用 `STM32CUBEIDE_EXE`、`ARM_GCC`、`ARM_TOOLS` 指定位置；host 显式选 native GCC，目录生成还需 .NET/PowerShell 7。
 
 2026-10-12 软件基线为两工程四配置 0 errors/0 warnings、APP 18/18、Boot 2/2；目标尚未烧录实板。软件通过不等于实板发布：12 MHz/USB 时序、SPI2 负载、升级/掉电、IWDG 余量仍待测；必须记录 `g_usb_min_heap ≥ 1024 B`，`g_usb_worker_stack_free` 与 `g_usb_io_stack_free` 各 `≥ 256 B`，并记录 RX 水位/溢出。源 USB-HID 的 25 MHz 板验收不能替代目标证据。

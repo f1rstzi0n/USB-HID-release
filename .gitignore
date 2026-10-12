@@ -45,3 +45,6 @@ Thumbs.db
 
 # 迁移前 CubeMX 备份仅留本地。
 /docs/reference/*-before.ioc
+
+# 独立克隆发布验收证据。
+!docs/validation/publication-*.log

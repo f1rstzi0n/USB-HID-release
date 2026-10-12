@@ -102,10 +102,12 @@ APP 静态 RAM 已包含 20 KiB RTOS heap，剩余 RAM 不等于 heap 空闲。B
 
 固件唯一构建定义是每个工程自己的 CubeIDE managed build。CubeMX 再生成后，在对应工程根目录依次运行：
 
+工程脚本使用 PowerShell 7（`pwsh`）；Windows PowerShell 5.1 无法解析部分 UTF-8 无 BOM 脚本。
+
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/cubeide/apply_sources.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/cubeide/verify_generated.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/cubeide/verify_owned_c.ps1
+pwsh -NoProfile -ExecutionPolicy Bypass -File tools/cubeide/apply_sources.ps1
+pwsh -NoProfile -ExecutionPolicy Bypass -File tools/cubeide/verify_generated.ps1
+pwsh -NoProfile -ExecutionPolicy Bypass -File tools/cubeide/verify_owned_c.ps1
 node tools/cubeide/verify_shared.js
 ```
 

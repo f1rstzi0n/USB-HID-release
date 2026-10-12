@@ -1,0 +1,28 @@
+[
+  {
+    "project": "Test446",
+    "config": "Debug",
+    "flash_bytes": 257588,
+    "data_bytes": 3560,
+    "bss_bytes": 108500,
+    "static_ram_bytes": 112060,
+    "linker_heap_stack_bytes": 3076,
+    "ram_after_static_and_reserve": 15928,
+    "vector": "0x8010200",
+    "mailbox": "0x2001fff8",
+    "initial_msp": "0x2001fff8"
+  },
+  {
+    "project": "Test446",
+    "config": "Release",
+    "flash_bytes": 158704,
+    "data_bytes": 3008,
+    "bss_bytes": 107736,
+    "static_ram_bytes": 110744,
+    "linker_heap_stack_bytes": 3072,
+    "ram_after_static_and_reserve": 17248,
+    "vector": "0x8010200",
+    "mailbox": "0x2001fff8",
+    "initial_msp": "0x2001fff8"
+  }
+]

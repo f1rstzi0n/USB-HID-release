@@ -64,7 +64,7 @@ Native stub 只替换 HAL、RTOS、TinyUSB 外设边界；USB 总线时序、真
 
 版本清单：[shared-source-manifest.json](../shared-source-manifest.json)。运行 node tools/cubeide/verify_shared.js；可显式传入另一工程目录做比较，不是编译依赖。共享代码变更需同时同步、回归、审核并更新清单。第三方许可保留在 Drivers 下。
 
-目标说明使用 v4.3（wire major 4）、BVC4 布局 4、单槽更新，修正旧协议版本/双槽表述；源工程说明保持原状。
+目标说明使用 v4.3（wire major 4）、BVC4 布局 4、单槽更新，修正旧协议版本/双槽表述；源工程固件代码保持原状；归档指南另行更新。
 
 ## 实板验收（全部待执行）
 
@@ -85,18 +85,20 @@ Native stub 只替换 HAL、RTOS、TinyUSB 外设边界；USB 总线时序、真
 
 在各自工程根目录：
 
+工程脚本使用 PowerShell 7（`pwsh`）；Windows PowerShell 5.1 无法解析部分 UTF-8 无 BOM 脚本。
+
 ```powershell
-powershell -ExecutionPolicy Bypass -File tools/cubeide/verify_generated.ps1
-powershell -ExecutionPolicy Bypass -File tools/cubeide/build.ps1 -Config All
+pwsh -ExecutionPolicy Bypass -File tools/cubeide/verify_generated.ps1
+pwsh -ExecutionPolicy Bypass -File tools/cubeide/build.ps1 -Config All
 node tools/cubeide/verify_builds.js
 node tools/cubeide/verify_shared.js
-powershell -ExecutionPolicy Bypass -File tools/cubeide/verify_owned_c.ps1
+pwsh -ExecutionPolicy Bypass -File tools/cubeide/verify_owned_c.ps1
 cmake -S tests/host -B build-host -G Ninja -DCMAKE_C_COMPILER=gcc
 cmake --build build-host
 ctest --test-dir build-host --output-on-failure
 ```
 
-本机 native GCC/CMake/Ninja 来自 StrawberryPerl；显式选择 native gcc，避免其他嵌入式编译器被自动选中。APP 目录生成回归需已安装 .NET/PowerShell，输出在 build-host。可设置 ARM_GCC / ARM_TOOLS / STM32CUBEIDE_EXE 调整工具位置。
+本机 native GCC/CMake/Ninja 来自 StrawberryPerl；显式选择 native gcc，避免其他嵌入式编译器被自动选中。APP 目录生成回归需已安装 .NET/PowerShell 7，输出在 build-host。可设置 ARM_GCC / ARM_TOOLS / STM32CUBEIDE_EXE 调整工具位置。
 
 CubeMX 再生成后执行 tools/cubeide/apply_sources.ps1，配置核验，再四配置完整构建；自动检查不能替代查看生成 GPIO/ISR。
 
