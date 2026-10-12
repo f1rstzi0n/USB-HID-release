@@ -1,0 +1,42 @@
+Internal ctest changing into directory: C:/Users/17907/Desktop/Test446/build-host
+Test project C:/Users/17907/Desktop/Test446/build-host
+      Start  1: crc16
+ 1/18 Test  #1: crc16 ............................   Passed    0.05 sec
+      Start  2: frame
+ 2/18 Test  #2: frame ............................   Passed    0.05 sec
+      Start  3: frag
+ 3/18 Test  #3: frag .............................   Passed    0.05 sec
+      Start  4: catalog
+ 4/18 Test  #4: catalog ..........................   Passed    0.05 sec
+      Start  5: service
+ 5/18 Test  #5: service ..........................   Passed    0.05 sec
+      Start  6: cd_meta
+ 6/18 Test  #6: cd_meta ..........................   Passed    0.05 sec
+      Start  7: usb_device
+ 7/18 Test  #7: usb_device .......................   Passed    0.05 sec
+      Start  8: cd_store
+ 8/18 Test  #8: cd_store .........................   Passed    6.89 sec
+      Start  9: flash_normal
+ 9/18 Test  #9: flash_normal .....................   Passed    0.06 sec
+      Start 10: flash_erase_timeout
+10/18 Test #10: flash_erase_timeout ..............   Passed    0.04 sec
+      Start 11: flash_bus_timeout
+11/18 Test #11: flash_bus_timeout ................   Passed    0.04 sec
+      Start 12: flash_io_fault
+12/18 Test #12: flash_io_fault ...................   Passed    0.04 sec
+      Start 13: compact_runtime
+13/18 Test #13: compact_runtime ..................   Passed    0.05 sec
+      Start 14: catalog_store
+14/18 Test #14: catalog_store ....................   Passed    9.38 sec
+      Start 15: catalog_real
+15/18 Test #15: catalog_real .....................   Passed    0.22 sec
+      Start 16: usb_handoff
+16/18 Test #16: usb_handoff ......................   Passed    0.07 sec
+      Start 17: usb_media
+17/18 Test #17: usb_media ........................   Passed    0.05 sec
+      Start 18: fw_image
+18/18 Test #18: fw_image .........................   Passed    0.20 sec
+
+100% tests passed, 0 tests failed out of 18
+
+Total Test time (real) =  17.55 sec

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>Andromeda.CatalogPack</AssemblyName>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <AutomaticallyUseReferenceAssemblyPackages>false</AutomaticallyUseReferenceAssemblyPackages>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CatalogPack.cs" />
+    <Compile Include="CatalogSource.cs" />
+    <PackageReference Include="YamlDotNet" Version="[17.0.0]" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+[0/1] Re-running CMake...
+-- Configuring done (0.7s)
+-- Generating done (0.3s)
+-- Build files have been written to: C:/Users/17907/Desktop/Test446/build-host
+[1/4] Building C object CMakeFiles/test_usb_handoff.dir/C_/Users/17907/Desktop/Test446/App/usb/usb_proto.c.obj
+[2/4] Building C object CMakeFiles/test_usb_handoff.dir/test_usb_handoff.c.obj
+[3/4] Linking C executable test_usb_handoff.exe

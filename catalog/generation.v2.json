@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "source": "SW110048.catalog.yaml",
+  "sourceSha256": "9fbce9384d7dd60d7356b2158da0ecc6ce8ca32bb2daf63db41bd1df87165afb",
+  "device": {
+    "target": "BV500-F446",
+    "name": "BV500-USB",
+    "type": 2,
+    "catalogVersion": "1.4.9"
+  },
+  "parameterCount": 2183,
+  "groupCount": 135,
+  "treeRecordCount": 2318,
+  "uiCount": 29,
+  "errorCount": 17,
+  "initialByteCount": 8148,
+  "runtimeContractSha256": "4d9817ef6c1681a1c3143bfe37001cfacde3ac65330cd07ebbcc072baae0b13a",
+  "runtimeRulesSha256": "f154571260e931afb8c11d1147b03bf580ee2741085627637c657e359b1a3213",
+  "initialValueSha256": "468944175d0334f9a1360191cf14831d5d821248d893d99f638bcb8444cd80d5",
+  "bindingsSha256": "c380eb06b230e99987e157bee50ee8d41ee0b329c29bf03db82bd4b627b26375",
+  "files": {
+    "catalog/SW110048.catalog.csv": "0b4f33d9d4c88787009d937a6f581459346dabbb731124b22a240998cce917ca",
+    "catalog/SW110048.tree.csv": "8477400708889581561d17f33294f5b3174ce3657484d045f0dbbf4912d047bf",
+    "catalog/groups.v2.json": "a8a74385937b7cf124bd58c36c2566e5f1d0aa3ee7b4eeaa7ff6346446bdb770",
+    "catalog/ui-bindings.csv": "c380eb06b230e99987e157bee50ee8d41ee0b329c29bf03db82bd4b627b26375",
+    "catalog/errors.csv": "ddf53119e91dce9490f60a853915512352cdd0fe858d4b7f8f3c9491bfc11ab7",
+    "catalog/source-info.json": "c03cd52f7e534323400309c0257650acf87577557722edf79b63a142e7618bcb",
+    "firmware/generated/bvpv_catalog_data.c": "1d4a7419282a1a7a90366bba79bc8741a4512b1084fbdc88de218aa7ae4dc070",
+    "firmware/generated/bvpv_catalog_data.h": "0bfd7a649076c2736e2adb617e8fd9961ff76e5768b14c456fc75c7f50d9f08a",
+    "firmware/generated/bvpv_catalog_bindings.h": "a61f6fecccfd36253226fcffef82ac1d2bd38e7d21d43ceaf6a2ccc84871e7e4",
+    "build-catalog/SW110048.catalog.body": "6218fd3e49738a283a83c58ab698866338fc5072d0c9b5a28802633b937ddc1d",
+    "build-catalog/SW110048.catalog.body.json": "e6080d384cc09c37c0df83b1e7340b7047ffcb3c5aa9a769f9e74c7d0f129e93",
+    "build-catalog/SW110048.catalog.body.runtime": "4d9817ef6c1681a1c3143bfe37001cfacde3ac65330cd07ebbcc072baae0b13a"
+  },
+  "requirements": {
+    "firmwareRebuild": true,
+    "hostRebuild": false,
+    "hostGenerated": false,
+    "catalogInstallation": true
+  }
+}

@@ -1,0 +1,47 @@
+# 构建定义必须入库；仅排除本地输出。
+/Debug/
+/Release/
+/build/
+/build-*/
+/out/
+/release/
+/MXTmpFiles/
+/RTE/
+/Objects/
+/Listings/
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.o
+*.d
+*.a
+*.log
+*.tmp
+*.zip
+*.stldr
+*.ftl
+*.ftl_save
+.metadata/
+.vs/
+.vscode/
+bin/
+obj/
+*.uvoptx
+*.uvprojx.user
+*.user
+Thumbs.db
+.DS_Store
+# 必需公钥与最终验证日志。
+!release-public/public-key.bin
+!tests/fixtures/firmware/public-key.bin
+!tests/fixtures/catalog/public-key.bin
+!tests/fixtures/catalog/range-overrides.public.bin
+!docs/validation/build-All-20261012-142049.log
+!docs/validation/build-All-20261012-142049.stderr.log
+!docs/validation/host-build.log
+!docs/validation/host-tests.log
+
+# 迁移前 CubeMX 备份仅留本地。
+/docs/reference/*-before.ioc
